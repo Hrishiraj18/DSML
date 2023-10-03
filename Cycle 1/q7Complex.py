@@ -22,7 +22,7 @@ class Complex:
         if self.imag >= 0:
             return f"{self.real} + {self.imag}i"
         else:
-            return f"{self.real} - {-self.imag}i"
+            return f"{self.real} - {self.imag}i"
 
 
 # Input two complex numbers
