@@ -8,11 +8,21 @@ def sigmoid(z):
 # Manual Initialization of the neural network parameters
 def initializeParameters(inputFeatures, neuronsInHiddenLayers, outputFeatures):
     # Manually set the weights and biases
-    W1 = np.random.rand(neuronsInHiddenLayers, inputFeatures)
-    b1 = np.zeros((neuronsInHiddenLayers, 1))
-    W2 = np.random.rand(outputFeatures, neuronsInHiddenLayers)
-    b2 = np.zeros((outputFeatures, 1))
-    
+    print("Enter the weights for the input to the hidden layer:")
+    W1 = np.array([[float(input()), float(input())],
+                  [float(input()), float(input())]])
+
+    print("Enter the weights for the hidden layer to output:")
+    W2 = np.array([[float(input())],
+                  [float(input())]])
+
+    print("Enter the bias for the hidden layer:")
+    b1 = np.array([[float(input())],
+                  [float(input())]])
+
+    print("Enter the bias for the output layer:")
+    b2 = np.array([[float(input())]])
+
     parameters = {"W1": W1, "b1": b1, "W2": W2, "b2": b2}
     return parameters
 
@@ -88,8 +98,8 @@ plt.ylabel("Loss value")
 plt.show()
 
 # Testing
-X_test = np.array([[1, 1, 0, 0], [0, 1, 0, 1]])  # XOR input for testing
-cost, _, A2 = forwardPropagation(X_test, Y, parameters)
+X = np.array([[1, 1, 0, 0], [0, 1, 0, 1]])  # XOR input
+cost, _, A2 = forwardPropagation(X, Y, parameters)
 prediction = (A2 > 0.5) * 1.0
-print("Predicted Output:")
+# print(A2)
 print(prediction)
