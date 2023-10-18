@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-x = [1, 2, 6, 4, 5]
-y = [2, 4, 10, 8, 6]
+x = [1, 2, 3, 4, 5]
+y = [1, 2, 3, 4, 5]
 
 plt.plot(x, y, label='Line Plot')
 
