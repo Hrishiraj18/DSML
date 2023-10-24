@@ -18,7 +18,7 @@ total_sales = {
     'shampoo': 0,
     'moisturizer': 0
 }
-csv_file = "sales.csv" 
+csv_file = "abc.csv" 
 with open(csv_file, "r") as file:
     reader = csv.DictReader(file)
     for row in reader:

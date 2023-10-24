@@ -1,5 +1,5 @@
 import math
-x=int(input("Enter the radian"))
+x=float(input("Enter the radian"))
 n=int(input("Enter the number"))
 def sum_sin(x,n):
     sum_sin=0
