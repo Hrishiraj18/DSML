@@ -4,6 +4,7 @@ arr = np.array([[1, 0, 3],
                 [7, 8, 0]])
 zero_indices = np.where(arr == 0)
 #print(zero_indices)-returns a turple with two list
+print(zero_indices)
 
 row_indices, col_indices = zero_indices
 

@@ -15,6 +15,7 @@ def findwordlist(wordlist,name):
         if i.find(name)!=-1:
             count+=1
             indexlist.append(i.find(name))
+            print(i.find(name))
     
     return(count,indexlist)
 result=findwordlist(wordlist,name)
